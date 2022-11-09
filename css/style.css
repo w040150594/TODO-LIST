@@ -1,0 +1,190 @@
+/* 响应式设计=>  因布局相对简单直接采用vw/vh作为长度单位完成响应设计 暂不需媒体查询 */
+html,
+body,
+div,
+span,
+ul,
+input,
+a,
+h1,
+header {
+	margin: 0;
+	padding: 0;
+
+	text-decoration: none;
+	list-style: none;
+}
+
+header h1 {
+	height: 11.994vh;
+	line-height: 11.994vh;
+
+	background-color: #27ae60;
+
+	text-align: center;
+	font-size: 5.997vh;
+	color: white;
+	text-shadow: 2px 2px 2px #CE5937;
+}
+
+.active {
+	background-color: #27ae60;
+}
+
+.active input {
+	display: block;
+	margin: 0 auto;
+
+	box-sizing: border-box;
+	width: 90vw;
+	height: 7vh;
+	margin-bottom: 2vh;
+	padding-top: 1vh;
+	border: 0;
+	border-radius: 2px;
+	box-shadow: 0 5px 3px #ff7575, 0 0 0 0 px #fff;
+
+	text-indent: 1vw;
+}
+
+.active input:focus {
+	box-shadow: 0 0 6px rgb(0 0 0 / 60%);
+	outline: none;
+}
+
+.active input::placeholder {
+	color: #555;
+	font-size: 1.5vw;
+	text-align: center;
+}
+
+.active button {
+	display: block;
+	margin: 0 auto;
+
+	box-sizing: border-box;
+	width: 8vh;
+	height: 8vh;
+	margin-bottom: 2vh;
+	border: 0;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px #CE5937;
+	background-color: white;
+
+	text-shadow: 1px 1px 1px #37ce446b;
+	font-weight: bolder;
+	color: #27ae60;
+	font-size: 4vh;
+}
+
+.active button:hover {
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+	background-color: lightblue;
+}
+
+
+.activeTaskNum {
+	height: 4.498vw;
+	line-height: 4.498vw;
+	margin-bottom: 2vh;
+
+	text-align: center;
+	font-size: 4vw;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px #CE5937
+}
+
+.option {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.option span {
+	display: inline-block;
+
+	width: 17.991vw;
+	height: 4.498vw;
+	line-height: 4.498vw;
+	margin-left: 2.999vw;
+	margin-bottom: 2vh;
+	padding-bottom: 1vh;
+
+
+	text-align: center;
+	font-size: 4vw;
+	font-weight: bolder;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #CE5937
+}
+
+.option span:first-of-type {
+	border-bottom: 3px solid white;
+}
+
+.option span:hover {
+	color: black
+}
+
+ul {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+ul li {
+	display: flex;
+	align-items: center;
+
+	box-sizing: border-box;
+	width: 100%;
+	border-radius: 8px;
+	box-shadow:
+		2px 2px 3px rgba(0, 0, 0, 0.185),
+		-2px -2px 3px rgba(255, 255, 255, 0);
+	margin-top: 4.498vh;
+	padding: 2vh;
+
+	background: #ffffff00;
+
+	font-size: 3.5vw;
+}
+
+ul li a {
+	margin-left: auto;
+	border-radius: 4px;
+	padding: 4px;
+	border-bottom: 5px solid red;
+	box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+	background-color: #ff4d4f;
+
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+}
+
+ul li a:hover {
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.5s, transform 0.1s;
+}
+
+ul li span {
+	flex-grow: 1;
+	margin-left: 2vw;
+	border-radius: 4px;
+	padding: 6px 0 6px 6px;
+}
+
+ul li input {
+	align-self: center;
+
+	width: 4vw;
+	height: 4vw;
+}
+
+.delete {
+	background-color: lavenderblush;
+
+	color: red;
+	text-decoration: line-through;
+}
